@@ -1,0 +1,163 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  min-width: 100%;
+  display: flex;
+  max-width: 1120px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  border-bottom: 4px solid #8195ad;
+}
+
+.header__inner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.header__logo {
+  max-width: 70px;
+  max-height: 70px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.header__title {
+  width: 100%;
+  text-align: center;
+  line-height: 1;
+}
+
+h1 {
+  font-size: 2.8em;
+  font-weight: lighter
+}
+
+h3 {
+  font-weight: 300;
+}
+
+article {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  border-bottom: 4px solid #8195ad;
+}
+
+section {
+  width: 100%;
+  margin: 30px 0px 30px 0px;
+}
+
+.slider__img img {
+  width: 100%;
+}
+
+.description {
+  font-size: 1.2em;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  border-bottom: 4px solid #8195ad;
+  justify-content: center;
+}
+
+.featured {
+  width: 100%;
+}
+
+.featured h2 {
+  color: #8b98a2;
+  font-size: 2.3em;
+  letter-spacing: 1.6px;
+  margin-left: 10px;
+  line-height: 0.8;
+  margin: 15px 0px;
+}
+
+.work_snippet {
+  line-height: 0.1;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.work_snippet img {
+  width: 100%;
+}
+
+.work_snippet h3 {
+  font-size: 2.3em;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.work_link {
+  color: inherit;
+  text-decoration: none;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  font-size: 1.4em;
+}
+
+.contact-text {
+  font-size: 1.3em;
+}
+
+.fa {
+  min-width: 10%;
+  font-size: 1.7em;
+}
+
+@media screen and (min-width:600px) {
+  .header__inner {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .header__logo {
+    width: 20%;
+  }
+  .header__title {
+    width: 80%;
+    text-align: right;
+    line-height: 0.2em;
+  }
+  .work_snippet {
+    width: 51%;
+  }
+}
+
+@media screen and (min-width:700px) {
+  main {
+    justify-content: space-between;
+  }
+  .work_snippet {
+    width: 49%;
+  }
+}
+
+@media screen and (min-width:860px) {
+  body {
+    max-width: 860px;
+    margin: auto;
+  }
+  .work_snippet {
+    width: 30%;
+  }
+}
